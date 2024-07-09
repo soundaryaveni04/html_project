@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title> Js Bulb </title>
+</head>
+<body bgcolor="blue">
+<center>
+    <img id="myImage"  onclick="changeImage()"  src="pic_bulboff.gif" width="100" height="180">
+</center>
+
+
+<h1 style="color: chartreuse;"> About Bulb </h1>
+<h3> <p style="color:white">* An electric bulb refers to an electric lamp which consists of a translucent or transparent glass housing. <br> ->It is also known as a light bulb.<br> # This simple device has been used for the purpose of illumination for more than a century. <br>* Electric bulb refers to a device which produces light on the application of electricity.</p></h3>
+
+<script> 
+function changeImage(){
+var image=document.getElementById('myImage')
+if (image.src.match("bulbon")) {
+    image.src = "pic_bulboff.gif";
+  } else {
+    image.src = "pic_bulbon.gif";
+  }
+}
+
+</script>
+</body>
+</html>
